@@ -1,0 +1,233 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+}
+
+.collection {
+    width: 100px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+.content {
+    width: 800px;
+    height: 100%;
+}
+
+.title {
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div {
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+h4 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.divblock {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.vertical-text {
+    padding: 0 30px;
+}
+
+.row {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 20px;
+    margin-left: 100px;
+    padding: 5% 5%;
+}
+
+.game {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin: 10px;
+    padding-top: 55px;
+    color: cornsilk;
+}
+
+.game_block {
+    height: fit-content;
+}
+
+@media (max-width: 767.75px) {
+    .bottom {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .content_right {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+    .content-left img {
+        width: 48px;
+        height: 48px;
+    }
+    .content-left {
+        margin-left: 110px;
+        max-width: 500px !important;
+    }
+    .content_left_picture {
+        height: 48px;
+        float: left;
+    }
+    .content_right {
+        max-width: 500px !important;
+    }
+    .delete {
+        margin-left: 400px;
+    }
+    .content {
+        width: 90%;
+        height: 100%;
+    }
+    .title {
+        width: 75%;
+        height: 120px;
+        margin-left: 12.5%;
+        padding-top: 25px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* background-attachment: fixed; */
+    }
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+    .game {
+        width: 45%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        padding-top: 55px;
+        color: cornsilk;
+    }
+}
+
+@media (min-width: 768px) {
+    .content_right {
+        max-width: 350px !important;
+    }
+    .content {
+        max-width: 450px !important;
+    }
+    .delete {
+        margin-left: 250px;
+    }
+    .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title {
+        width: 75%;
+        height: 120px;
+        padding-top: 25px;
+        margin-left: 12.5%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* background-attachment: fixed; */
+    }
+    h4 {
+        width: 100%;
+        height: 100%;
+    }
+    .game {
+        width: 35%;
+        height: 130px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        margin: 15px;
+        padding-top: 45px;
+        padding: 45px 5px 0 5px;
+        color: cornsilk;
+        border-radius: 100%;
+    }
+    .bottom {
+        width: 100%;
+        height: fit-content;
+        margin: 0 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    .content {
+        max-width: 850px !important;
+    }
+    .content_right {
+        max-width: 500px !important;
+    }
+    .delete {
+        margin-left: 400px;
+    }
+    h4 {
+        width: 100%;
+        height: 100%;
+    }
+    .game {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        margin: 25px;
+        padding-top: 55px;
+        color: cornsilk;
+    }
+    .bottom {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        max-width: 1050px !important;
+    }
+    .content_right {
+        max-width: 750px !important;
+    }
+    .delete {
+        margin-left: 580px;
+    }
+    .game {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        float: left;
+        margin: 25px;
+        padding-top: 55px;
+        color: cornsilk;
+    }
+}

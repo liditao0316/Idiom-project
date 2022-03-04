@@ -1,0 +1,761 @@
+* {
+    /*去除margin和padding避免定位出现干扰*/
+    /*星号代表选择所有元素*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*媒体查询*/
+
+@media (max-width: 767.75px) {
+    .div1 {
+        /*div水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        /*定义宽高*/
+        height: 200px;
+        background-repeat: no-repeat;
+        /*图片不会平铺出现*/
+        background-image: url(../pictures/imgBox1.png);
+        background-position: center center;
+        background-size: 100% 100%;
+        /*图片用背景的方式展示在d1块上*/
+    }
+    .i1 {
+        /*定义按钮大小位置*/
+        width: 25x;
+        height: 25px;
+        position: absolute;
+        /*绝对定位*/
+        top: 18%;
+        margin-left: 15px;
+        display: none;
+        font-size: 40px;
+    }
+    .input1 {
+        width: 25px;
+        height: 25px;
+        background-image: url('../pictures/button_left\ .png');
+        background-size: 100% 100%;
+    }
+    .i2 {
+        /*定义right按钮大小位置*/
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        /*绝对定位*/
+        top: 18%;
+        margin-left: 360px;
+        display: none;
+        font-size: 50px;
+    }
+    .input2 {
+        width: 25px;
+        height: 25px;
+        background-image: url('../pictures/button_right\ .png ');
+        background-size: 100% 100%;
+        ;
+    }
+    .div1:hover .i1 {
+        display: block;
+    }
+    .div1:hover .i2 {
+        display: block;
+    }
+    .class>image {
+        width: 30px;
+        height: 50px;
+    }
+    .div2 {
+        /*定义播放顺序板块的大小位置*/
+        position: absolute;
+        /*绝对定位*/
+        width: 100px;
+        height: 40px;
+        background: none;
+        background-position: center center;
+        /*无背景,理解为透明*/
+        top: 240px;
+        left: 45%;
+        display: flex;
+        /*横向排列,使3个点横向排列*/
+    }
+    #d21,
+    #d22,
+    #d23 {
+        /*定义播放顺序板块中每一个小圆圈的大小和位置*/
+        width: 10px;
+        height: 10px;
+        background: rgb(235, 238, 238);
+        /*rgba四个字母代表红绿蓝透明*/
+        /*这里其实使用rgb或者16进制就可以,多此一举了*/
+        position: relative;
+        /*相对定位,相对于自身未设置之前的位置*/
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .d3-top{
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 400px;
+        font-size: medium;
+        font-weight: bolder;
+        border-left:5px solid #66806d;
+        padding-left: 10px;
+    }
+    #d3 {
+        /* 水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        height: 50px;
+    }
+    .d31 {
+        width: 50%;
+        float: left;
+        height: 130px;
+        background-image: url('../pictures/list_picture.png');
+        background-size: 100% 100%;
+    }
+    .result-item {
+        width: 90%;
+        height: 105px;
+        margin: 0 auto;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .title-left {
+        width: 200px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .title-left>img {
+        width: 20px;
+        height: 20px;
+    }
+    .title-left text{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .title-right {
+        margin: 0 auto;
+        width: 170px;
+        height: 40px;
+        font-size: medium;
+    }
+    .title1 {
+        width: 100%;
+        height: 40px;
+        /* height:77rpx; */
+        font-size: small;
+        color: gray;
+        font-family: "楷体";
+        padding-left: 10px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+     ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        color: #fff;
+    }
+  
+}
+
+@media (min-width: 768px) {
+    .div1 {
+        /*div水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 500px;
+        /*定义宽高*/
+        height: 200px;
+        background-repeat: no-repeat;
+        /*图片不会平铺出现*/
+        background-image: url(../pictures/imgBox1.png);
+        background-position: center center;
+        background-size: 100% 100%;
+        /*图片用背景的方式展示在d1块上*/
+    }
+    .i1 {
+        /*定义按钮大小位置*/
+        width: 25x;
+        height: 25px;
+        position: absolute;
+        /*绝对定位*/
+        top: 18%;
+        margin-left: 15px;
+        display: none;
+        font-size: 40px;
+    }
+    .input1 {
+        width: 30px;
+        height: 30px;
+        background-image: url('../pictures/button_left\ .png');
+        background-size: 100% 100%;
+    }
+    .i2 {
+        /*定义right按钮大小位置*/
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        /*绝对定位*/
+        top: 18%;
+        margin-left: 460px;
+        display: none;
+        font-size: 50px;
+    }
+    .input2 {
+        width: 30px;
+        height: 30px;
+        background-image: url('../pictures/button_right\ .png ');
+        background-size: 100% 100%;
+        ;
+    }
+    .div1:hover .i1 {
+        display: block;
+    }
+    .div1:hover .i2 {
+        display: block;
+    }
+    .class>image {
+        width: 30px;
+        height: 50px;
+    }
+    .div2 {
+        /*定义播放顺序板块的大小位置*/
+        position: absolute;
+        /*绝对定位*/
+        width: 100px;
+        height: 40px;
+        background: none;
+        background-position: center center;
+        /*无背景,理解为透明*/
+        top: 240px;
+        left: 45%;
+        display: flex;
+        /*横向排列,使3个点横向排列*/
+    }
+    #d21,
+    #d22,
+    #d23 {
+        /*定义播放顺序板块中每一个小圆圈的大小和位置*/
+        width: 10px;
+        height: 10px;
+        background: rgb(235, 238, 238);
+        /*rgba四个字母代表红绿蓝透明*/
+        /*这里其实使用rgb或者16进制就可以,多此一举了*/
+        position: relative;
+        /*相对定位,相对于自身未设置之前的位置*/
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .d3-top{
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 500px;
+        font-size: medium;
+        font-weight: bolder;
+        border-left:5px solid #66806d;
+        padding-left: 10px;
+    }
+    #d3 {
+        /* 水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 500px;
+        height: 400px;
+    }
+    .d31 {
+        width: 50%;
+        float: left;
+        height: 130px;
+        background-image: url('../pictures/list_picture.png');
+        background-size: 100% 100%;
+    }
+    .result-item {
+        width: 90%;
+        height: 80px;
+        margin: 0 auto;
+        padding-top:20px ;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .title-left-div{
+        padding-left: 0px;
+    }
+    .title-left {
+        width: 200px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .title-left>img {
+        width: 20px;
+        height: 20px;
+    }
+    .title-left text{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .title-right {
+        margin: auto;
+        margin-top: 0px;
+        width: 230px;
+        height: 40px;
+        font-size: medium;
+    }
+    .title1 {
+        width: 100%;
+        height: 40px;
+        /* height:77rpx; */
+        font-size: small;
+        color: gray;
+        font-family: "楷体";
+        padding-left: 10px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+     ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        color: #fff;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .div1 {
+        /*div水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 700px;
+        /*定义宽高*/
+        height: 300px;
+        background-repeat: no-repeat;
+        /*图片不会平铺出现*/
+        background-image: url(../pictures/imgBox1.png);
+        background-position: center center;
+        background-size: 100% 100%;
+        /*图片用背景的方式展示在d1块上*/
+    }
+    .i1 {
+        /*定义按钮大小位置*/
+        width: 30x;
+        height: 30px;
+        position: absolute;
+        /*绝对定位*/
+        top: 25%;
+        margin-left: 25px;
+        display: none;
+        font-size: 40px;
+    }
+    .input1 {
+        width: 40px;
+        height: 40px;
+        background-image: url('../pictures/button_left\ .png');
+        background-size: 100% 100%;
+    }
+    .i2 {
+        /*定义right按钮大小位置*/
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        /*绝对定位*/
+        top: 25%;
+        margin-left: 640px;
+        display: none;
+        font-size: 50px;
+    }
+    .input2 {
+        width: 40px;
+        height: 40px;
+        background-image: url('../pictures/button_right\ .png ');
+        background-size: 100% 100%;
+        ;
+    }
+    .div1:hover .i1 {
+        display: block;
+    }
+    .div1:hover .i2 {
+        display: block;
+    }
+    .class>image {
+        width: 30px;
+        height: 50px;
+    }
+    .div2 {
+        /*定义播放顺序板块的大小位置*/
+        position: absolute;
+        /*绝对定位*/
+        width: 100px;
+        height: 40px;
+        background: none;
+        background-position: center center;
+        /*无背景,理解为透明*/
+        top: 330px;
+        left: 45%;
+        display: flex;
+        /*横向排列,使3个点横向排列*/
+    }
+    #d21,
+    #d22,
+    #d23 {
+        /*定义播放顺序板块中每一个小圆圈的大小和位置*/
+        width: 15px;
+        height: 15px;
+        background: rgb(235, 238, 238);
+        /*rgba四个字母代表红绿蓝透明*/
+        /*这里其实使用rgb或者16进制就可以,多此一举了*/
+        position: relative;
+        /*相对定位,相对于自身未设置之前的位置*/
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .d3-top{
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 700px;
+        font-size: medium;
+        font-weight: bolder;
+        border-left:5px solid #66806d;
+        padding-left: 10px;
+    }
+    #d3 {
+        /* 水平居中*/
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 700px;
+        height: 400px;
+    }
+    .d31 {
+        width: 50%;
+        float: left;
+        height: 140px;
+        background-image: url('../pictures/list_picture.png');
+        background-size: 100% 100%;
+    }
+    .result-item {
+        width: 85%;
+        height: 105px;
+        padding-top: 23px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .title-left {
+        width: 200px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .title-left text{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .title-left-div {
+        width: 0px;
+        height: 0px;
+    }
+    .title-right {
+        margin: auto;
+        margin-top: 0px;
+        width: 300px;
+        height: 40px;
+        font-size: medium;
+    }
+    .title1 {
+        width: 100%;
+        height: 40px;
+        /* height:77rpx; */
+        font-size: small;
+        color: gray;
+        font-family: "楷体";
+        padding-left: 10px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+     ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        color: #fff;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    
+.div1 {
+    /*div水平居中*/
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    border-radius: 20px;
+    /*定义宽高*/
+    height: 400px;
+    background-repeat: no-repeat;
+    /*图片不会平铺出现*/
+    background-image: url(../pictures/imgBox1.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    /*图片用背景的方式展示在d1块上*/
+}
+.i1 {
+    /*定义按钮大小位置*/
+    width: 50x;
+    height: 50px;
+    position: absolute;
+    /*绝对定位*/
+    top: 30%;
+    margin-left: 35px;
+    display: none;
+    font-size: 40px;
+}
+.input1 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('../pictures/button_left\ .png');
+    background-size: 100% 100%;
+}
+.i2 {
+    /*定义right按钮大小位置*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /*绝对定位*/
+    top: 30%;
+    margin-left: 920px;
+    display: none;
+    font-size: 50px;
+}
+.input2 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('../pictures/button_right\ .png ');
+    background-size: 100% 100%;
+    ;
+}
+.div1:hover .i1 {
+    display: block;
+}
+.div1:hover .i2 {
+    display: block;
+}
+.div2 {
+    /*定义播放顺序板块的大小位置*/
+    position: absolute;
+    /*绝对定位*/
+    width: 100px;
+    height: 40px;
+    background: none;
+    background-position: center center;
+    /*无背景,理解为透明*/
+    top: 430px;
+    left: 45%;
+    display: flex;
+    /*横向排列,使3个点横向排列*/
+}
+#d21,
+#d22,
+#d23 {
+    /*定义播放顺序板块中每一个小圆圈的大小和位置*/
+    width: 20px;
+    height: 20px;
+    background: rgb(235, 238, 238);
+    /*rgba四个字母代表红绿蓝透明*/
+    /*这里其实使用rgb或者16进制就可以,多此一举了*/
+    position: relative;
+    /*相对定位,相对于自身未设置之前的位置*/
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.d3-top{
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 1000px;
+    font-size: large;
+    border-left:5px solid #66806d;
+    padding-left: 10px;
+}
+#d3 {
+    /* 水平居中*/
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    height: 380px;
+}
+.d31 {
+    width: 50%;
+    float: left;
+    height: 160px;
+    background-image: url('../pictures/list_picture.png');
+    background-size: 100% 100%;
+}
+.result-item {
+    width: 85%;
+    height: 100px;
+    padding-top:35px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.title-left {
+    width: 200px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.title-left-div {
+    width: 0px;
+    height: 15px;
+}
+.title-right {
+    margin: auto;
+    margin-top: 5px;
+    width: 95%;
+    height: 40px;
+    color: black;
+}
+.title-left text{
+    font-size: large;
+    font-weight: bolder;
+}
+.title1 {
+    width: 100%;
+    height: 40px;
+    /* height:77rpx; */
+    font-size: small;
+    color: gray;
+    font-family: "楷体";
+    padding-left: 10px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+ ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: #fff;
+}
+    
+}
+
+.page{
+    width: 180px;
+    height: 20px;
+    margin:0 auto;
+}
+.page_ul{
+    margin-top: 10px;
+    padding-left: 3px;
+    width: 130px;
+    height: 20px;
+    float: left;
+    list-style:none;
+}
+
+.page li{
+    width: 25px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    float: left;
+}
+
+.page a{
+    color: #000;
+}
+.page_left{
+    padding-top: 10px;
+    list-style: none;
+    margin:0 auto;
+    height: 30px;
+    float: left;
+}
+
+.page_right{
+    padding-top: 10px;
+    margin-left: 0px;
+    list-style: none;
+    float: left;
+}
+
+.page_item a{ 
+    color: #66806D;
+}
+.page_item{
+    color: #66806D;
+}

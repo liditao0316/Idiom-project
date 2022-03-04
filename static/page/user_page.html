@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<title>个人中心</title>
+
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/home.css">
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="../css/User_page.css" />
+
+</head>
+
+<body style="background-image: url('../pictures/picture.png');">
+<!-- 导航栏
+============================ -->
+<header id="header" class="sticky-top-slide"> 
+  <!-- Navbar -->
+  <nav class="primary-menu navbar navbar-expand-lg text-uppercas text-3 font-weight-600">
+    <div class="container"> 
+      <!-- Logo --> 
+      <a class="logo ml-3 ml-md-0" href="index.html" title="MXapp"> 熠熠小成语 </a> 
+      <!-- Logo End -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+      <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link smooth-scroll" href="../index.html">首页</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="../page/Idiom_classification.html">成语分类</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="../page/storyList_page.html">成语故事</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="./collection_page.html">我的收藏</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll active" href="./user_page.html">个人中心</a></li>
+          <li class="align-items-center h-auto ml-lg-3"><a href="./login_page.html" class="nav-link btn btn-primary shadow-none d-inline-block mt-3 mt-lg-0 smooth-scroll navigation_btn">登陆</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+</header>
+<!-- 导航栏结束 --> 
+
+
+<!--主要内容部分-->
+<div id="main-wrapper" style="background-image: url('../pictures/body_background.png');">
+
+  <div style="height: 20px;"></div>
+  <div class="content" >
+    <div style="float: left;">
+      <div class="content-left" onclick="Goto()">
+        <!--头像-->
+        <div class="content_left_picture">
+          <img src="../pictures/User_image.jpeg">
+        </div>
+        <div class="content_left_name">
+          <div><h3>superman</h3></div>
+          <div style="color: gray;"><h6 class="text-muted">123456</h6></div>
+          <div>欢迎你的到来！</div>
+        </div>
+        <!--个人信息-->
+        <div class="controduction">
+          <div style="width: 280px;">
+            <div class="top-list">
+              <ul>
+                <li style="color: gray;">成语收藏</li>
+                <li id="idiom-length">--</li>
+              </ul>
+            </div>
+            <div class="top-list">
+              <ul>
+                <li style="color: gray;">故事收藏</li>
+                <li id="story-length">--</li>
+              </ul>
+            </div>
+          </div>
+          <div style="padding-left: 15px;"><h6>每日任务</h6></div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/wancheng-copy.png"></img>
+                </div>
+                <div class="middle">每日成语</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/wancheng.png"></img>
+                </div>
+                <div class="middle">每日典故</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/wancheng.png"></img>
+                </div>
+                <div class="middle">每日一句</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/wancheng.png"></img>
+                </div>
+                <div class="middle">每日接龙</div>
+                </div>
+            </navigator>
+          </div>
+          <div style="width: 200px;margin:0 auto;padding-top:20px;border-bottom: #e9e8e8 1px solid;"></div>
+          <div style="padding-left: 15px;margin-top: 20px;"><h6>个人简介</h6></div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/xuexiao.png"></img>
+                </div>
+                <div class="middle">华南师范大学</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/didian.png"></img>
+                </div>
+                <div class="middle">广东-佛山</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/weixin.png"></img>
+                </div>
+                <div class="middle">123456789</div>
+                </div>
+            </navigator>
+          </div>
+          <div class="Myself" >
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  <img src="../pictures/qq.png"></img>
+                </div>
+                <div class="middle">2045537497</div>
+                </div>
+            </navigator>
+          </div>
+          <div style="width: 200px;margin:0 auto;padding-top:20px;border-bottom: #e9e8e8 1px solid;"></div>
+          <div style="padding-left: 15px;margin-top: 20px;"><h6>微信小程序</h6></div>
+          <div class="Myself" style="padding-top: 20px;">
+            <navigator url="/pages/mycollection/mycollection">
+              <div class="collection">
+                <div class="left">
+                  
+                </div>
+                <div class="middle" style="margin-left: 30px;"><img src="../pictures/ma.jpeg"/></div>
+                </div>
+            </navigator>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content_right">
+      <div class="content_right-nav-box">
+        <ul class="content_right-nav">
+          <li class="content_right-nav-item current"><a href="#">成语列表</a></li>
+          <li class="content_right-nav-item"><a href="#">故事列表</a></li>
+        </ul>
+      </div>
+      <div class="content_right-content-box">
+        <div class="content_right-content-top">
+          
+        </div>
+        <block>
+          <div class="page">
+            <ul class="page_left">
+              <li>
+              <a aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            </ul>
+            <ul class="page_ul">
+            <li class="page_item"><a>1</a></li>
+            <li ><a>2</a></li>
+            <li ><a>3</a></li>
+            <li ><a>4</a></li>
+            <li ><a>5</a></li>
+          </ul>
+          <ul class="page_right"style="padding-left:0px">
+            <li >
+            <a aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+          </ul>
+          
+          </div>
+          
+        </block>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- 主要内容部分结束 --> 
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<!-- Easing --> 
+<script src="../js/user_page.js"></script>
+<script src="../js/home.js"></script>
+</body>
+</html>
+
